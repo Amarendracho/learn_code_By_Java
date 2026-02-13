@@ -29,7 +29,10 @@ public class Demo {
 		System.out.println(lang.toLowerCase());
 		System.out.println(subject.toUpperCase());
 		
+		String removeSpaces = "		Hey I am Text	";
+		System.out.println(removeSpaces.trim());
 		
+		String replaceText = "This is old text";
 	}
 
 }
