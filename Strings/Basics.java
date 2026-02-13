@@ -9,7 +9,6 @@ public class Basics {
 		this.lname = lname;
 	}
 
-	
 	public String toString() {
 		return "My First Name is: " +fname + " Last Name: "+ lname;
 	}
@@ -21,3 +20,6 @@ public class Basics {
 		
 	}
 }
+
+
+
