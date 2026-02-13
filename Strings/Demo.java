@@ -43,6 +43,12 @@ public class Demo {
 		String original_Name = "Amarendra";
 		original_Name.toCharArray();
 		System.out.println(original_Name);
+		
+		String[] split_by_chars = original_Name.split("");
+		for(String pieces : split_by_chars) {
+			System.out.println(pieces);
+		}
+		//System.out.println(split_by_chars.toString());
 	}
  
 }
