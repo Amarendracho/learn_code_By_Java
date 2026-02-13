@@ -39,6 +39,10 @@ public class Demo {
 		System.out.println(replaceText.replaceAll(replaceText,"THIS IS NEW TEXT"));
 		
 		System.out.println(replaceText.contains("text"));
+		
+		String original_Name = "Amarendra";
+		original_Name.toCharArray();
+		System.out.println(original_Name);
 	}
-
+ 
 }
