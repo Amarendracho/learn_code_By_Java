@@ -33,6 +33,12 @@ public class Demo {
 		System.out.println(removeSpaces.trim());
 		
 		String replaceText = "This is old text";
+		System.out.println(replaceText);
+		System.out.println(replaceText.replace('T', 'W'));
+		System.out.println(replaceText.replace("old", "update"));
+		System.out.println(replaceText.replaceAll(replaceText,"THIS IS NEW TEXT"));
+		
+		System.out.println(replaceText.contains("text"));
 	}
 
 }
