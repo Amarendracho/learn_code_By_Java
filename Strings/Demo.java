@@ -48,6 +48,14 @@ public class Demo {
 		for(String pieces : split_by_chars) {
 			System.out.println(pieces);
 		}
+		System.out.println();
+		String item = "milk";
+		char[] ch = item.toCharArray();
+		System.out.println(ch);
+		for(char c : ch) {
+			System.out.println(c);
+		}
+		
 		//System.out.println(split_by_chars.toString());
 	}
  
