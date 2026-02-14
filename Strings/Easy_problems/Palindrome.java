@@ -46,17 +46,32 @@ public class Palindrome {
 		return "PAL";
 	}
 
+	// Optimization of two pointers approach - O(n) time and O(1) space
+	static boolean pali_Check(String s) {
+
+		int len = s.length();
+		for (int i = 0; i < len / 2; i++) {
+			
+			if(s.charAt(i) != s.charAt(len - i - 1))
+				return false;
+		}
+		
+		return true;
+	}
+
 	public static void main(String[] args) {
 		Palindrome pal = new Palindrome();
 		System.out.println(pal.palindrome_Check("chehc"));
 		// Time: O(n), Space: O(n)
 
-		// using String buffer
+		
 		System.out.println(pali_check("poop"));
 		// Time: O(n), Space: O(n)
-		
+
 		System.out.println(pal_Check("moom"));
 		
+		System.out.println(pali_Check("abcddcba"));
+
 	}
 
 }
