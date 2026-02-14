@@ -23,7 +23,7 @@ public class Palindrome {
 
 		String reverse = "";
 
-		for (int i = name.length() - 1; i <= 0; i--) {
+		for (int i = name.length() - 1; i >= 0; i--) {
 			reverse += name.charAt(i);
 		}
 		
@@ -36,7 +36,7 @@ public class Palindrome {
 		// System.out.println(Palindrome.palindrome_Check("java"));
 		Palindrome pal = new Palindrome();
 		
-		System.out.println(pal.palindrome_Check("check"));
+		System.out.println(pal.palindrome_Check("chehc"));
 		
 
 	}
