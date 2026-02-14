@@ -17,31 +17,46 @@ public class Palindrome {
 		return name.equals(reverse);
 
 	}
-	
+
 	// brute-force but better (String) — StringBuilder reverse
 	public static boolean pali_check(String str) {
-		
-		if(str == null) 
+
+		if (str == null)
 			return false;
-		
+
 		String rev = new StringBuffer(str).reverse().toString();
-		
+
 		return str.equals(rev);
 
 	}
-	
+
 	// using whike loop optimized T - O(n) S - O(1) - no extra datastructure used
+	public static String pal_Check(String s) {
+		int left = 0;
+		int right = s.length() - 1;
+
+		while (left < right) {
+
+			if (s.charAt(left) != s.charAt(right))
+				return "NOT PAL";
+
+			left++;
+			right--;
+		}
+		return "PAL";
+	}
 
 	public static void main(String[] args) {
 		Palindrome pal = new Palindrome();
 		System.out.println(pal.palindrome_Check("chehc"));
 		// Time: O(n), Space: O(n)
-		
+
 		// using String buffer
 		System.out.println(pali_check("poop"));
 		// Time: O(n), Space: O(n)
 		
+		System.out.println(pal_Check("moom"));
 		
-	} 
+	}
 
 }
