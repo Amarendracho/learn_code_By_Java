@@ -29,6 +29,8 @@ public class Palindrome {
 		return str.equals(rev);
 
 	}
+	
+	// using whike loop optimized T - O(n) S - O(1) - no extra datastructure used
 
 	public static void main(String[] args) {
 		Palindrome pal = new Palindrome();
@@ -37,6 +39,7 @@ public class Palindrome {
 		
 		// using String buffer
 		System.out.println(pali_check("poop"));
+		// Time: O(n), Space: O(n)
 		
 		
 	} 
