@@ -17,8 +17,16 @@ public class Test {
 	}
 	
 	// Function to check if a string is a palindrome
+	static int isPal(String s) {
+		int left = 0;
+		int right = s.length()-1;
+		return pal_check(s, left, right);
+	}
 	
 	public static void main(String[] args) {
+		
+        String s = "abba";
+        System.out.println(isPal(s));
 		
 	}
 
