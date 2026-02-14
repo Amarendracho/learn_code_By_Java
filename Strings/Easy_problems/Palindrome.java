@@ -51,12 +51,32 @@ public class Palindrome {
 
 		int len = s.length();
 		for (int i = 0; i < len / 2; i++) {
-			
-			if(s.charAt(i) != s.charAt(len - i - 1))
+
+			if (s.charAt(i) != s.charAt(len - i - 1))
 				return false;
 		}
-		
+
 		return true;
+	}
+
+	// return int
+	static int paliCheck(String s) {
+
+		if (s == null)
+			return 0;
+
+		int left = 0;
+		int right = s.length() - 1;
+
+		while (left < right) {
+			if (s.charAt(left) != s.charAt(right))
+				return 0;
+
+			left++;
+			right--;
+
+		}
+		return 1;
 	}
 
 	public static void main(String[] args) {
@@ -64,13 +84,14 @@ public class Palindrome {
 		System.out.println(pal.palindrome_Check("chehc"));
 		// Time: O(n), Space: O(n)
 
-		
 		System.out.println(pali_check("poop"));
 		// Time: O(n), Space: O(n)
 
 		System.out.println(pal_Check("moom"));
-		
+
 		System.out.println(pali_Check("abcddcba"));
+
+		System.out.println(paliCheck("noon"));
 
 	}
 
