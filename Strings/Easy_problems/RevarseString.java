@@ -30,7 +30,7 @@ public class RevarseString {
 		
 		System.out.println(revarseStr("amar"));
 		
-		
+		System.out.println(revarseString("amarendra"));
 
 //		Using Two Pointers - O(n) Time and O(1) Space
 //		Using Recursion - O(n) Time and O(n) Space
