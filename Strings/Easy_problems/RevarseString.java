@@ -14,10 +14,23 @@ public class RevarseString {
 		return r;
 
 	}
+	
+	static String revarseString(String s) {
+		
+		StringBuffer bf = new StringBuffer();
+		
+		for(int i = s.length()-1; i>=0; i--) {
+			bf.append(s.charAt(i));
+		}
+		
+		return bf.toString();
+	}
 
 	public static void main(String[] args) {
 		
 		System.out.println(revarseStr("amar"));
+		
+		
 
 //		Using Two Pointers - O(n) Time and O(1) Space
 //		Using Recursion - O(n) Time and O(n) Space
