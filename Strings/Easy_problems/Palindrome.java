@@ -46,7 +46,7 @@ public class Palindrome {
 		return "PAL";
 	}
 	
-	//
+	//Reversing String - O(n) time and O(n) space
 	static int palindrom_ch(String name) {
 		return name.equals(new StringBuffer(name)
 				.reverse()
