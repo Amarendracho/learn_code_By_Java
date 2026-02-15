@@ -45,6 +45,14 @@ public class Palindrome {
 		}
 		return "PAL";
 	}
+	
+	//
+	static int palindrom_ch(String name) {
+		return name.equals(new StringBuffer(name)
+				.reverse()
+				.toString()) ? 1: 0;
+	}
+	
 
 	// Optimization of two pointers approach - O(n) time and O(1) space
 	static boolean pali_Check(String s) {
