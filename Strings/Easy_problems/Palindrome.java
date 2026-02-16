@@ -30,7 +30,7 @@ public class Palindrome {
 
 	}
 
-	// using whike loop optimized T - O(n) S - O(1) - no extra datastructure used
+	// using while loop optimized T - O(n) S - O(1) - no extra datastructure used
 	public static String pal_Check(String s) {
 		int left = 0;
 		int right = s.length() - 1;
