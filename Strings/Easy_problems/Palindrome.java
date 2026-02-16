@@ -50,7 +50,7 @@ public class Palindrome {
 	static int palindrom_ch(String name) {
 		return name.equals(new StringBuffer(name)
 				.reverse()
-				.toString()) ? 1: 0;
+				.toString()) ? 1 : 0;
 	}
 	
 
