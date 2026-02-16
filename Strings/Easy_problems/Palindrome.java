@@ -2,7 +2,7 @@ package codePractice.Strings.Easy_problems;
 
 public class Palindrome {
 
-	// brute-force (slow due to string concat)
+	// brute-force (slow due to string concat) T - O(N) S - O(N)
 	public boolean palindrome_Check(String name) {
 
 		if (name == null)
@@ -18,7 +18,7 @@ public class Palindrome {
 
 	}
 
-	// brute-force but better (String) — StringBuilder reverse
+	// brute-force but better (String) — StringBuilder reverse T - O(N) S - O(N)
 	public static boolean pali_check(String str) {
 
 		if (str == null)
