@@ -42,7 +42,7 @@ public class Palindrome {
 
 			left++;
 			right--;
-		}
+		} 
 		return "PAL";
 	}
 	
