@@ -3,6 +3,9 @@ package codePractice.Strings;
 public class Palindrom {
 
 	public static int pal_Check(String str) {
+		if(str == null)
+			return 0;
+		
 		int left = 0;
 		int right = str.length() - 1;
 
