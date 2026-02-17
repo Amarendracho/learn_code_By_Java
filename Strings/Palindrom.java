@@ -3,17 +3,21 @@ package codePractice.Strings;
 public class Palindrom {
 
 	public static boolean pal_Check(String str) {
+		int left = 0;
+		int right = str.length() - 1;
 
-		String revarse = "";
+		while (left < right) {
+			if (str.charAt(left) != str.charAt(right)) 
+				return false;
 
-		for (int i = str.length() - 1; i >= 0; i--) {
-			revarse += str.charAt(i);
+			left++;
+			right--;
 		}
+		return true;
 
-		return str.equals(revarse);
 	}
 
 	public static void main(String[] args) {
-		System.out.println(Palindrom.pal_Check("dad")); 
+		System.out.println(Palindrom.pal_Check("josoj"));
 	}
-}
+} 
