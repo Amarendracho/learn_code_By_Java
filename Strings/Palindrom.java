@@ -2,18 +2,18 @@ package codePractice.Strings;
 
 public class Palindrom {
 
-	public static boolean pal_Check(String str) {
+	public static String pal_Check(String str) {
 		int left = 0;
 		int right = str.length() - 1;
 
 		while (left < right) {
 			if (str.charAt(left) != str.charAt(right)) 
-				return false;
+				return "NOT - PLAINDROM";
 
 			left++;
 			right--;
 		}
-		return true;
+		return "PALINDROM";
 
 	}
 
