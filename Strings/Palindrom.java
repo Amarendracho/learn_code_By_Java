@@ -2,30 +2,20 @@ package codePractice.Strings;
 
 public class Palindrom {
 
-	public static void pal_Check(String str){
-		try {
-			if(str == null)
-			System.err.println("input can't be null");
-		}
-		catch (NullPointerException e){
-			System.out.println(e.getStackTrace());
-		}
-		
-		int left = 0;
-		int right = str.length() - 1;
-
-		while (left < right) {
-			if (str.charAt(left) != str.charAt(right)) 
-				System.out.println("NOT - PALI");
-
-			left++;
-			right--;
-		}
-		System.out.println("PALI");
-
+	public static String pal_Check(String str){
+		return str.equals(new StringBuffer(str)
+				.reverse()
+				.toString()) ? "PALI" : "N-PALI";
 	}
+	
+	static int palindrom_ch(String name) {
+		return name.equals(new StringBuffer(name)
+				.reverse()
+				.toString()) ? 1 : 0;
+	}
+
 
 	public static void main(String[] args) {
-		Palindrom.pal_Check(null);
+		System.out.println(Palindrom.pal_Check("nanan"));
 	}
-} 
+}  
