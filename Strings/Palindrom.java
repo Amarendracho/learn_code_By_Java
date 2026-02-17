@@ -8,11 +8,6 @@ public class Palindrom {
 				.toString()) ? "PALI" : "N-PALI";
 	}
 	
-	static int palindrom_ch(String name) {
-		return name.equals(new StringBuffer(name)
-				.reverse()
-				.toString()) ? 1 : 0;
-	}
 
 
 	public static void main(String[] args) {
