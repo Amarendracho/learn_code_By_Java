@@ -17,30 +17,57 @@ public class PalindromeCheck {
 	}
 
 	// taking input
-	static String palindromeCheck() {
+//	static String palindromeCheck() {
+//
+//		try (Scanner scan = new Scanner(System.in)) {
+//			System.out.print("Enter a string: ");
+//			String input = scan.nextLine();
+//
+//			int left = 0;
+//			int right = input.length() - 1;
+//
+//			while (left < right) {
+//				if (input.charAt(left) != input.charAt(right))
+//					return "NOT PALINDROME";
+//
+//				left++;
+//				right--;
+//
+//			}
+//			return "PALINDROME";
+//
+//		}
+//	}
+	
+	static void palindromeChec() {
 
 		try (Scanner scan = new Scanner(System.in)) {
 			System.out.print("Enter a string: ");
-			String input = scan.nextLine();
+			String input = scan.nextLine().trim().toLowerCase();
 
 			int left = 0;
 			int right = input.length() - 1;
+			boolean isPalindrome = true;
 
 			while (left < right) {
-				if (input.charAt(left) != input.charAt(right))
-					return "NOT PALINDROME";
-
+				if (input.charAt(left) != input.charAt(right)) {
+					isPalindrome = false;
+					break;
+				}
 				left++;
 				right--;
-
 			}
-			return "PALINDROME";
-
+			if(isPalindrome) {
+				System.out.println("IT'S PALINDROME");
+			}else {
+				System.err.println("NOT - PALINDROME");
+			}
 		}
 	}
 
 	public static void main(String[] args) {
 		System.out.println(PalindromeCheck.palCheck("jssuj"));
-		System.out.println(palindromeCheck());
+		//System.out.println(palindromeCheck());
+		palindromeChec();
 	}
 }
