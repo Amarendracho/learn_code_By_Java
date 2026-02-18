@@ -1,5 +1,11 @@
 package codePractice.Strings.BasicProblems;
 
+/*	Reverse a String
+	
+	Input: "amar"
+	Output: "rama"*/
+
+
 import java.util.Scanner;
 
 public class RevarseString {
