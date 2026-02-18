@@ -1,5 +1,12 @@
 package codePractice.Strings.BasicProblems;
 
+
+/*problem 
+	Check Palindrome
+
+	Input: "madam"
+	Output: true*/
+
 import java.util.Scanner;
 
 public class PalindromeCheck {
@@ -17,28 +24,29 @@ public class PalindromeCheck {
 	}
 
 	// taking input
-//	static String palindromeCheck() {
-//
-//		try (Scanner scan = new Scanner(System.in)) {
-//			System.out.print("Enter a string: ");
-//			String input = scan.nextLine();
-//
-//			int left = 0;
-//			int right = input.length() - 1;
-//
-//			while (left < right) {
-//				if (input.charAt(left) != input.charAt(right))
-//					return "NOT PALINDROME";
-//
-//				left++;
-//				right--;
-//
-//			}
-//			return "PALINDROME";
-//
-//		}
-//	}
+	static boolean palindromeCheck() {
+
+		try (Scanner scan = new Scanner(System.in)) {
+			System.out.print("Enter a string: ");
+			String input = scan.nextLine();
+
+			int left = 0;
+			int right = input.length() - 1;
+
+			while (left < right) {
+				if (input.charAt(left) != input.charAt(right))
+					return false;
+
+				left++;
+				right--;
+
+			}
+			return true;
+
+		}
+	}
 	
+	// print approach
 	static void palindromeChec() {
 
 		try (Scanner scan = new Scanner(System.in)) {
@@ -67,7 +75,7 @@ public class PalindromeCheck {
 
 	public static void main(String[] args) {
 		System.out.println(PalindromeCheck.palCheck("jssuj"));
-		//System.out.println(palindromeCheck());
+		System.out.println(palindromeCheck());
 		palindromeChec();
 	}
 }
