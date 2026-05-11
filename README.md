@@ -1,7 +1,7 @@
 # learn_code_By_Java
 JAVA CODING TOPICS AND QUESTIONS
 1. String
-2. MAKE PASS
+2. MAKE PASSP
 
 
 
